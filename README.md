@@ -7,6 +7,21 @@ A scheduler and resource planning component built for React and made for modern 
 
 Inspired by [Full Calendar Scheduler](https://fullcalendar.io/scheduler/).
 
+## Fork Version
+
+This project is forked from [StephenChou1017/react-big-scheduler](https://github.com/StephenChou1017/react-big-scheduler)
+
+## Changes
+
+> * Implemented firstDate 
+> * Implemented lastDate 
+
+```js
+    setFirstDate((date = moment().format(DATE_FORMAT)));
+    setLastDate((date = moment().format(DATE_FORMAT)));
+```
+
+
 ## Version selection
 
 - antd >= 3.9.0 ? react-big-scheduler@0.2.7 : react-big-scheduler@0.2.4
@@ -26,7 +41,7 @@ import moment from 'moment'
 //2. create the view model, put it in the props obj
 let schedulerData = new SchedulerData(new moment().format(DATE_FORMAT), ViewTypes.Week);
 //set locale moment to the schedulerData, if your locale isn't English. By default, Scheduler comes with English(en, United States).
-moment.locale('zh-cn');
+moment.locale('pt-br');
 schedulerData.setLocaleMoment(moment);
 //set resources here or later
 let resources = [

@@ -125,6 +125,18 @@ export default class SchedulerData {
         this._createRenderData();
     }
 
+    setFirstDate(date=moment().format(DATE_FORMAT)) {
+        this.firstDate = date;
+        this._createHeaders();
+        this._createRenderData();
+    }
+    
+    setLastDate(date=moment().format(DATE_FORMAT)) {
+        this.lastDate = date;
+        this._createHeaders();
+        this._createRenderData();
+    }
+
     setScrollToSpecialMoment(scrollToSpecialMoment){
         if(this.config.scrollToSpecialMomentEnabled)
             this.scrollToSpecialMoment = scrollToSpecialMoment;
