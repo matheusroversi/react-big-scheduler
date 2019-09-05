@@ -13,6 +13,17 @@ This project is forked from [StephenChou1017/react-big-scheduler](https://github
 
 ## Changes
 
+1.0.6
+
+> * Implemented removeResource
+> * Implemented removeResourceById
+
+```js
+    viewModel.removeResource(resource);
+    viewModel.removeResourceById(resourceId);
+```
+
+1.0.3
 > * Implemented firstDate 
 > * Implemented lastDate 
 
@@ -20,6 +31,8 @@ This project is forked from [StephenChou1017/react-big-scheduler](https://github
     setFirstDate((date = moment().format(DATE_FORMAT)));
     setLastDate((date = moment().format(DATE_FORMAT)));
 ```
+
+Command Npm Script ("build": "node scripts/build.js") not found command cpy style.css.
 
 
 ## Version selection

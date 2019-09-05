@@ -443,6 +443,26 @@ export default class SchedulerData {
         }
     }
 
+    removeResource(resource) {
+        let index = this.resources.indexOf(resource);
+        if(index !== -1) {
+            this.resources.splice(index, 1);
+            this._createRenderData();
+        }
+    }
+
+    removeResourceById(resourceId) {
+        let index = -1;
+        this.resources.forEach((item, idx) => {
+            if(item.id === resourceId)
+                index = idx;
+        })
+        if(index !== -1) {
+            this.resources.splice(index, 1);
+            this._createRenderData();
+        }
+    }
+
     getResourceTableConfigWidth() {
         if(this.showAgenda) return this.config.agendaResourceTableWidth;
 
