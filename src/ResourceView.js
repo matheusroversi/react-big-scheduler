@@ -70,10 +70,19 @@ class ResourceView extends Component {
                 };
             }
 
+            let complements = (
+                <div className="extras">
+                    <div className="progress">
+                        <div className="determinate"></div>
+                    </div>
+                </div>
+            )
+
             return (
                 <tr key={item.slotId}>
                     <td data-resource-id={item.slotId} style={tdStyle}>
                         {slotItem}
+                        {complements}
                     </td>
                 </tr>
             );
