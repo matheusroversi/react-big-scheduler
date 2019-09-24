@@ -74,6 +74,7 @@ class ResourceView extends Component {
                 <div className="extras">
                     <div className="progress">
                         <div className="determinate"></div>
+                        <div className="background"></div>
                     </div>
                 </div>
             )
