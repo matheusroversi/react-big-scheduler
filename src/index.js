@@ -309,7 +309,7 @@ class Scheduler extends Component {
         }
 
         return (
-            <table id="RBS-Scheduler-root" className="scheduler" style={{width: `${width}px`}}>
+            <table id="Ahg-Scheduler-root" className="scheduler" viewType={viewType} style={{width: `${width}px`}}>
                 <thead>
                 <tr>
                     <td colSpan="2">
